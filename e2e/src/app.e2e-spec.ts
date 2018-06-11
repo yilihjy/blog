@@ -7,8 +7,8 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display comming soon', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to blog!');
+    expect(page.getParagraphText()).toEqual(`YILIHJY's BLOG :│▌\n锐意制作中！`);
   });
 });

@@ -17,15 +17,15 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-  it(`should have as title 'app'`, async(() => {
+  it(`should have as title YILIHJY's BLOG :│▌`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('blog');
+    expect(app.title).toEqual(`YILIHJY's BLOG :│▌`);
   }));
-  it('should render title in a h1 tag', async(() => {
+  it('should render coming soon in a p tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to blog!');
+    expect(compiled.querySelector('p').textContent).toContain('锐意制作中！');
   }));
 });
